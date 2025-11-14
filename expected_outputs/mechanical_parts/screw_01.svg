@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="300" viewBox="0 0 500 300">
+  <!-- Placeholder expected SVG for screw_01 -->
+  <rect width="100%" height="100%" fill="white" />
+  <g stroke="black" fill="none" stroke-width="2">
+    <rect x="200" y="50" width="60" height="200" />
+    <!-- thread hints -->
+    <path d="M202 60 Q230 80 258 64" stroke-width="2" stroke="black" fill="none"/>
+  </g>
+</svg>

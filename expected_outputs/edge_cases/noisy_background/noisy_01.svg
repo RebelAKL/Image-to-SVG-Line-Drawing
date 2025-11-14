@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <!-- Placeholder expected SVG for noisy_01 -->
+  <rect width="100%" height="100%" fill="#cfcfcf" />
+  <rect x="200" y="150" width="400" height="300" stroke="black" fill="none" stroke-width="3" />
+</svg>

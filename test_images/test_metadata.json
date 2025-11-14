@@ -1,0 +1,222 @@
+{
+  "mechanical_parts/gear_spur_01.png": {
+    "category": "mechanical_parts",
+    "description": "Synthetic spur-gear like object with teeth and central bore (generated).",
+    "image_type": "gear",
+    "resolution": { "width": 800, "height": 600 },
+    "contrast_level": "high",
+    "geometry_complexity": "moderate",
+    "optimal_parameters": { "canny_sigma": 0.33, "min_contour_frac": 0.0001 },
+    "known_challenges": ["fine teeth detail", "specular highlights"],
+    "expected_output": "expected_outputs/mechanical_parts/gear_spur_01.svg",
+    "notes": "Synthetic image for mechanical tests."
+  },
+
+  "mechanical_parts/bolt_hex_01.png": {
+    "category": "mechanical_parts",
+    "description": "Hex-head bolt illustration (synthetic).",
+    "image_type": "bolt",
+    "resolution": { "width": 600, "height": 400 },
+    "contrast_level": "medium",
+    "geometry_complexity": "simple",
+    "optimal_parameters": { "canny_sigma": 0.28, "min_contour_frac": 0.00005 },
+    "known_challenges": ["sharp corners", "small shaft"],
+    "expected_output": "expected_outputs/mechanical_parts/bolt_hex_01.svg",
+    "notes": "Head + shaft geometry; useful for corner preservation tests."
+  },
+
+  "mechanical_parts/screw_01.png": {
+    "category": "mechanical_parts",
+    "description": "Screw shaft with thread-like markings (synthetic).",
+    "image_type": "screw",
+    "resolution": { "width": 500, "height": 300 },
+    "contrast_level": "medium",
+    "geometry_complexity": "moderate",
+    "optimal_parameters": { "canny_sigma": 0.35, "min_contour_frac": 0.00005 },
+    "known_challenges": ["repetitive fine lines"],
+    "expected_output": "expected_outputs/mechanical_parts/screw_01.svg",
+    "notes": "Tests preservation of repetitive thread detail."
+  },
+
+  "architectural_elements/facade_grid_01.png": {
+    "category": "architectural_elements",
+    "description": "Facade with regular grid windows (synthetic).",
+    "image_type": "building_facade",
+    "resolution": { "width": 1000, "height": 600 },
+    "contrast_level": "medium",
+    "geometry_complexity": "moderate",
+    "optimal_parameters": { "canny_sigma": 0.25, "min_contour_frac": 0.00005 },
+    "known_challenges": ["parallel straight lines", "uniform repeating patterns"],
+    "expected_output": "expected_outputs/architectural_elements/facade_grid_01.svg",
+    "notes": "Useful for validating straight-line extraction and grid preservation."
+  },
+
+  "architectural_elements/floorplan_01.png": {
+    "category": "architectural_elements",
+    "description": "Simplified floor-plan-like lines and walls (synthetic).",
+    "image_type": "floor_plan",
+    "resolution": { "width": 800, "height": 600 },
+    "contrast_level": "high",
+    "geometry_complexity": "simple",
+    "optimal_parameters": { "canny_sigma": 0.25, "min_contour_frac": 0.00005 },
+    "known_challenges": ["thin wall lines"],
+    "expected_output": "expected_outputs/architectural_elements/floorplan_01.svg",
+    "notes": "Baseline architectural test."
+  },
+
+  "circuit_boards/pcb_traces_01.png": {
+    "category": "circuit_boards",
+    "description": "PCB-like image with parallel traces and pads (synthetic).",
+    "image_type": "pcb",
+    "resolution": { "width": 800, "height": 600 },
+    "contrast_level": "high",
+    "geometry_complexity": "complex",
+    "optimal_parameters": { "canny_sigma": 0.2, "min_contour_frac": 0.00002 },
+    "known_challenges": ["thin parallel traces", "small pads"],
+    "expected_output": "expected_outputs/circuit_boards/pcb_traces_01.svg",
+    "notes": "Precision needed on thin traces."
+  },
+
+  "circuit_boards/ic_chip_01.png": {
+    "category": "circuit_boards",
+    "description": "IC package with pins (synthetic).",
+    "image_type": "ic",
+    "resolution": { "width": 600, "height": 400 },
+    "contrast_level": "high",
+    "geometry_complexity": "moderate",
+    "optimal_parameters": { "canny_sigma": 0.22, "min_contour_frac": 0.00005 },
+    "known_challenges": ["small pin outlines"],
+    "expected_output": "expected_outputs/circuit_boards/ic_chip_01.svg",
+    "notes": "Useful for pin outline fidelity checks."
+  },
+
+  "tools/wrench_01.png": {
+    "category": "tools",
+    "description": "Wrench silhouette (synthetic).",
+    "image_type": "wrench",
+    "resolution": { "width": 800, "height": 600 },
+    "contrast_level": "high",
+    "geometry_complexity": "moderate",
+    "optimal_parameters": { "canny_sigma": 0.3, "min_contour_frac": 0.00005 },
+    "known_challenges": ["curved jaws"],
+    "expected_output": "expected_outputs/tools/wrench_01.svg",
+    "notes": "Mixed curves and straight edges."
+  },
+
+  "tools/screwdriver_01.png": {
+    "category": "tools",
+    "description": "Screwdriver flat-lay (synthetic).",
+    "image_type": "screwdriver",
+    "resolution": { "width": 600, "height": 400 },
+    "contrast_level": "medium",
+    "geometry_complexity": "simple",
+    "optimal_parameters": { "canny_sigma": 0.33, "min_contour_frac": 0.00005 },
+    "known_challenges": ["handle/shaft transition"],
+    "expected_output": "expected_outputs/tools/screwdriver_01.svg",
+    "notes": "Typical tool geometry test."
+  },
+
+  "edge_cases/high_contrast/black_on_white_01.png": {
+    "category": "edge_cases/high_contrast",
+    "description": "Black ellipse on white background (synthetic high-contrast).",
+    "image_type": "high_contrast",
+    "resolution": { "width": 800, "height": 600 },
+    "contrast_level": "high",
+    "geometry_complexity": "simple",
+    "optimal_parameters": { "canny_sigma": 0.2, "min_contour_frac": 0.00001 },
+    "known_challenges": ["sharp outline detection"],
+    "expected_output": "expected_outputs/edge_cases/high_contrast/black_on_white_01.svg",
+    "notes": "Tests auto-Canny handling of extreme contrast." 
+  },
+
+  "edge_cases/low_contrast/soft_box_01.png": {
+    "category": "edge_cases/low_contrast",
+    "description": "Soft box on slightly lighter background (synthetic low-contrast).",
+    "image_type": "low_contrast",
+    "resolution": { "width": 800, "height": 600 },
+    "contrast_level": "low",
+    "geometry_complexity": "simple",
+    "optimal_parameters": { "canny_sigma": 0.5, "min_contour_frac": 0.00002 },
+    "known_challenges": ["weak edges", "gradient boundaries"],
+    "expected_output": "expected_outputs/edge_cases/low_contrast/soft_box_01.svg",
+    "notes": "May require higher sigma and smaller contour threshold."
+  },
+
+  "edge_cases/complex_geometry/complex_01.png": {
+    "category": "edge_cases/complex_geometry",
+    "description": "Many overlapping small shapes to stress contour/trace algorithms.",
+    "image_type": "complex_pattern",
+    "resolution": { "width": 1200, "height": 800 },
+    "contrast_level": "medium",
+    "geometry_complexity": "complex",
+    "optimal_parameters": { "canny_sigma": 0.35, "min_contour_frac": 0.00001 },
+    "known_challenges": ["dense overlapping features", "curve fidelity"],
+    "expected_output": "expected_outputs/edge_cases/complex_geometry/complex_01.svg",
+    "notes": "Potrace/vectorization fidelity is the focus."
+  },
+
+  "edge_cases/simple_geometry/simple_shapes_01.png": {
+    "category": "edge_cases/simple_geometry",
+    "description": "Simple shapes (circle and rectangle) to verify no extra artifacts.",
+    "image_type": "simple_shapes",
+    "resolution": { "width": 400, "height": 300 },
+    "contrast_level": "high",
+    "geometry_complexity": "simple",
+    "optimal_parameters": { "canny_sigma": 0.25, "min_contour_frac": 0.00005 },
+    "known_challenges": ["avoid overfitting"],
+    "expected_output": "expected_outputs/edge_cases/simple_geometry/simple_shapes_01.svg",
+    "notes": "Baseline shapes for sanity checks."
+  },
+
+  "edge_cases/high_resolution/high_res_01.png": {
+    "category": "edge_cases/high_resolution",
+    "description": "Very large synthetic image to test memory and performance.",
+    "image_type": "high_resolution",
+    "resolution": { "width": 4000, "height": 3000 },
+    "contrast_level": "low",
+    "geometry_complexity": "moderate",
+    "optimal_parameters": { "canny_sigma": 0.33, "min_contour_frac": 0.0001 },
+    "known_challenges": ["memory", "performance"],
+    "expected_output": "expected_outputs/edge_cases/high_resolution/high_res_01.svg",
+    "notes": "Performance-oriented case."
+  },
+
+  "edge_cases/low_resolution/low_res_01.png": {
+    "category": "edge_cases/low_resolution",
+    "description": "Low-resolution image (synthetic).",
+    "image_type": "low_resolution",
+    "resolution": { "width": 320, "height": 240 },
+    "contrast_level": "medium",
+    "geometry_complexity": "simple",
+    "optimal_parameters": { "canny_sigma": 0.4, "min_contour_frac": 0.00005 },
+    "known_challenges": ["limited pixel information"],
+    "expected_output": "expected_outputs/edge_cases/low_resolution/low_res_01.svg",
+    "notes": "Tests behavior on small inputs."
+  },
+
+  "edge_cases/noisy_background/noisy_01.png": {
+    "category": "edge_cases/noisy_background",
+    "description": "Object on a noisy/dotted background (synthetic).",
+    "image_type": "noisy_background",
+    "resolution": { "width": 800, "height": 600 },
+    "contrast_level": "medium",
+    "geometry_complexity": "moderate",
+    "optimal_parameters": { "canny_sigma": 0.33, "min_contour_frac": 0.00015 },
+    "known_challenges": ["background clutter", "false contours"],
+    "expected_output": "expected_outputs/edge_cases/noisy_background/noisy_01.svg",
+    "notes": "Evaluates contour filtering effectiveness."
+  },
+
+  "edge_cases/minimal_features/single_line_01.png": {
+    "category": "edge_cases/minimal_features",
+    "description": "Single horizontal line as minimal feature case.",
+    "image_type": "single_line",
+    "resolution": { "width": 400, "height": 300 },
+    "contrast_level": "high",
+    "geometry_complexity": "simple",
+    "optimal_parameters": { "canny_sigma": 0.45, "min_contour_frac": 0.00001 },
+    "known_challenges": ["very few edges; potential None returns"],
+    "expected_output": "expected_outputs/edge_cases/minimal_features/single_line_01.svg",
+    "notes": "Verifies lower-bound behavior of the pipeline."
+  }
+}

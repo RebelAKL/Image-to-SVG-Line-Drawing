@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <!-- Placeholder expected SVG for wrench_01 -->
+  <rect width="100%" height="100%" fill="white" />
+  <g stroke="black" fill="none" stroke-width="4">
+    <rect x="100" y="250" width="400" height="70" />
+    <path d="M480 210 A100 80 0 0 1 680 300" />
+  </g>
+</svg>

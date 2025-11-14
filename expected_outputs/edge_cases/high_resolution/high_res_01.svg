@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="4000" height="3000" viewBox="0 0 4000 3000">
+  <!-- Placeholder expected SVG for high_res_01 -->
+  <rect width="100%" height="100%" fill="#f0f0f0" />
+  <g stroke="#c8c8c8" stroke-width="3">
+    <!-- sample grid lines -->
+    <path d="M0 0 H4000" />
+    <path d="M0 60 H4000" />
+    <path d="M0 120 H4000" />
+  </g>
+</svg>

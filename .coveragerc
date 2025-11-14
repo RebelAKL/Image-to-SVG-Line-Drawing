@@ -1,0 +1,17 @@
+[run]
+branch = True
+source = .
+
+[report]
+omit =
+    tests/*
+    */conftest.py
+    */__init__.py
+    .venv/*
+    venv/*
+    setup.py
+show_missing = True
+skip_covered = False
+
+[html]
+directory = htmlcov

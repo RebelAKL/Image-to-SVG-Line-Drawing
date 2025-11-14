@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <!-- Placeholder expected SVG for floorplan_01 -->
+  <rect width="100%" height="100%" fill="white" />
+  <g stroke="black" fill="none" stroke-width="6">
+    <path d="M50 50 H750 V550 H50 Z" />
+    <path d="M200 50 V400" stroke-width="6" />
+  </g>
+</svg>
